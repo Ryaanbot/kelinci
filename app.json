@@ -18,9 +18,11 @@
             "description": "Make a bot from @BotFather, and enter it's api token here.",
             "value": ""
         }
-      },
-      "buildpacks": [{
-        "url": "heroku/python"
+  },
+  "addons": [{
+    "plan": "heroku-postgresql",
+    "options": {
+      "version": "12"
     }
   }],
   "buildpacks": [{
